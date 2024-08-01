@@ -9,14 +9,14 @@ this_dir = pathlib.Path(__file__).resolve().parent
 ## the content in here has to map to a url:
     ## this was don in the url.py server
 def home_page_view(request, *args, **kwargs):
-    my_title = "My page"
+    my_title = "Aryan Starting page"
     my_context = {
         "page_title": my_title
         }
     html_template = "home.html"
     #html_file_path = this_dir / "home.html"
     #html_ = html_file_path.read_text()
-    return render(request, html_template)
+    return render(request, html_template, my_context)
 
 
 
