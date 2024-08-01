@@ -21,8 +21,8 @@ from .views import home_page_view
 
 urlpatterns = [
     
-    #path("", home_page_view), ## if i do it like this then it is the root directory
-    path("home-page", home_page_view), # this is what trails in after the standard URL
+    path("", home_page_view), ## if i do it like this then it is the root directory
+    #path("home-page", home_page_view), # this is what trails in after the standard URL
     
     #path('', home_page_view),
     path('admin/', admin.site.urls),
